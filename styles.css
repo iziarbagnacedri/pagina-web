@@ -29,6 +29,23 @@ footer{background-color: dimgray;height:250px;width: 100%;position: relative
 /* @media screen and (max-with:992px){  ES COMO UN IF
     body{
         background-color: olive;
-        color: white/*
+        color: white */
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+    
+    .header { grid-area: header; }
+    
+    .footer { grid-area: footer; }
+    
+    .main { grid-area: main; }
+
 
 
