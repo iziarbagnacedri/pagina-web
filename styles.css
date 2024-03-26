@@ -1,3 +1,34 @@
 body{
-    background-color: violet;
+    background-color: white;
 }
+
+header{background-color: dimgray;height:130px;width: 100%;position: sticky
+    ;}
+
+
+#logo{position:absolute; height: 110px
+    ;}
+
+nav{
+    background-color: dimgray;
+    height: 800px;
+    width: 150px;
+}
+
+main{
+    position: absolute;height: 400px;
+    background-color: aqua;
+
+}
+
+footer{background-color: dimgray;height:250px;width: 100%;position: relative
+    ;}
+
+
+.div1 {width:50%;background-color: green;}
+/* @media screen and (max-with:992px){  ES COMO UN IF
+    body{
+        background-color: olive;
+        color: white/*
+
+
