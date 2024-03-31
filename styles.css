@@ -2,34 +2,20 @@ body{
     background-color: white;
 }
 
-header{background-color: dimgray;height:130px;width: 100%;position: sticky
-    ;}
-
-
-#logo{position:absolute; height: 110px
-    ;}
-
-nav{
-    background-color: dimgray;
-    height: 800px;
-    width: 150px;
+a{
+    text-decoration: none;
 }
 
-main{
-    position: absolute;height: 400px;
-    background-color: aqua;
-
+p{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-footer{background-color: dimgray;height:250px;width: 100%;position: relative
-    ;}
 
-
-.div1 {width:50%;background-color: green;}
 /* @media screen and (max-with:992px){  ES COMO UN IF
     body{
         background-color: olive;
         color: white */
+
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -41,11 +27,52 @@ footer{background-color: dimgray;height:250px;width: 100%;position: relative
         "footer footer footer";
     }
     
-    .header { grid-area: header; }
+    .header { 
+        grid-area: header;
+        position: sticky;
+        background-color:white;
+        width: 100%;
+        height: 150px;
+    }
     
-    .footer { grid-area: footer; }
+    #logo{
+        display: flex; 
+        position: fixed;
+        justify-content:right;
+        height:150px;
+        width: 180px;
+        }
+
+    .nav {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: white;
+        height: 70px;
+    }
+
+    .proyectos{ 
+        color: black;
+        }
+    
+    .nosotros{ 
+        color: black;
+        }
+
+    .contactanos{
+        color: black;
+        }
+    #fotoinicio{
+        width: 100vw;
+    }
+
     
     .main { grid-area: main; }
+
+
+    .footer { grid-area: footer; }
 
 
 
