@@ -5,14 +5,15 @@
 
 
 .header {
-    position: absolute;
+    position: fixed;
+    display: flex;
     top: 0;
-    width: 100%;
+    width: 100vw;
     color: white;
     background-color: white;
     padding: 10px 0;
     z-index: 1000; 
-    height: 100px;
+    height: 90px;
 }
 
 .menu-icono {
@@ -25,11 +26,11 @@
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1200px; 
     margin: 0 auto;
+    margin-top: 30px;
     padding: 0 20px;
     font-size: 20px;
 }
@@ -41,6 +42,7 @@ main {
 .navbar a {
     color: black;
     text-decoration: none;
+    padding: 70px;
 }
 
 .proyectos{
@@ -91,8 +93,15 @@ main {
     margin-top: 180px;
 }
 
+.fotogrande2{
+    width: 100vw;
+}
+
+
 .foto2{
     width: 60vw;
+    height: 750px;
+    right: 0;
 }
 
 .txt-parrafo{
@@ -103,9 +112,50 @@ main {
     margin: 25px;
 }
 
-.titulo{
+
+.construcciones-3{
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.foto3{
+    width: 60vw;
+    height: 750px;
+    margin: 80px;
+}
+
+.txt-parrafo2{
+    text-align: right;
+    width: 30vw;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 25px;
 
 }
 
+.fotogrande2{
+    width: 100vw;
+    margin-top: 120px;
+
+}
+
+.foto4{ 
+    width: 100vw;
+    margin-top: 120px; 
+}
+
+
+.footer-container{
+    display:flex;
+    width: 100vw;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px; 
+    margin-top: 30px;
+    padding: 0 20px;
+    font-size: 15px;
+}
 
 
