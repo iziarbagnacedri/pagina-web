@@ -8,32 +8,28 @@
     position: fixed;
     display: flex;
     top: 0;
-    width: 100vw;
-    color: white;
+    width: 100%;
     background-color: white;
-    padding: 10px 0;
-    z-index: 1000; 
+    height: 95px;
+}
+
+.container{
     height: 90px;
-}
-
-.menu-icono {
+    margin-top: 0%;
     display: flex;
-    position: absolute;
-    height: 100px;
-    width: 130px;
-    margin-right: auto; 
-    margin-top: 0px; 
+}
+.container-fluid{
+    width: 100%;
 }
 
-.navbar {
-    justify-content: space-around;
-    align-items: center;
-    max-width: 1200px; 
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 0 20px;
-    font-size: 20px;
+.logo {
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 100px;
+    margin: 0%;
 }
+
 
 main {
     margin-top: 250px; 
@@ -42,7 +38,6 @@ main {
 .navbar a {
     color: black;
     text-decoration: none;
-    padding: 70px;
 }
 
 .proyectos{
@@ -137,14 +132,12 @@ main {
 .fotogrande2{
     width: 100vw;
     margin-top: 120px;
-
 }
 
 .foto4{ 
     width: 100vw;
     margin-top: 120px; 
 }
-
 
 .footer-container{
     display:flex;
@@ -153,9 +146,121 @@ main {
     justify-content: space-around;
     align-items: center;
     max-width: 1200px; 
-    margin-top: 30px;
     padding: 0 20px;
     font-size: 15px;
 }
 
 
+@media only screen and (max-width: 600px) {
+
+    .header {
+        display: flex;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000; 
+        height: 85px;
+    }
+
+    .logo {
+        display: flex;
+        position: sticky;
+        height: 64px;
+        width: 90px;
+        margin-top: 0px; 
+    }
+
+
+    .contenedor-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .primer-titulo {
+        margin-top: -200px;
+        margin-bottom: 60px;
+        font-size: 30px;
+        align-self: center;
+        text-align: center;
+        margin-right: 100px;
+        justify-content: center;
+    }
+    
+    .parrafo-principal {
+        font-size: 20px; 
+        text-align: center; 
+        max-width: 90%; 
+    }
+
+    .construcciones-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .txt-parrafo{
+        font-size: 20px;
+        text-align: center;
+        max-width: none; 
+        width: 100%; 
+        white-space: wrap; 
+        overflow-x: auto; 
+        margin-bottom: 80px;
+        margin-top: 10px;
+    
+    }
+
+    .foto2{
+        width: 100vw;
+        height: 220px;
+        margin-bottom: 60px;
+    }
+
+    .construcciones-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+
+    }
+
+    .txt-parrafo2{
+        font-size: 20px;
+        text-align: center;
+        max-width: none; 
+        width: 100%; 
+        white-space: wrap; 
+        overflow-x: auto; 
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .foto3{
+        width: 100vw;
+        height: 220px;
+        margin-bottom: 5px;
+    }
+
+    .foto4{
+        width: 100vw;
+        height: 220px;
+        margin-top: 60px;
+
+    }
+
+    
+
+    p{
+        max-width: 40%; 
+        margin: 0 auto;
+        align-items: center;
+    }
+    .container-fluid{
+        width: 100%;
+    }
+    #hola{
+        width: 100%;
+    }
+
+}
