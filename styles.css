@@ -3,7 +3,6 @@
     list-style: none;
 }
 
-
 .header {
     position: fixed;
     display: flex;
@@ -86,6 +85,7 @@ main {
     display: flex;
     align-items: center;
     margin-top: 180px;
+    margin-bottom: 200px;
 }
 
 .fotogrande2{
@@ -121,7 +121,7 @@ main {
 }
 
 .txt-parrafo2{
-    text-align: right;
+    text-align: left;
     width: 30vw;
     font-size: 30px;
     line-height: 1.5;
@@ -139,6 +139,7 @@ main {
     margin-top: 120px; 
 }
 
+
 .footer-container{
     display:flex;
     width: 100vw;
@@ -146,9 +147,31 @@ main {
     justify-content: space-around;
     align-items: center;
     max-width: 1200px; 
-    padding: 0 20px;
+    padding: 0 0px;
     font-size: 15px;
 }
+
+.footer-container2{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-between;
+    margin-top: -80px;
+}
+.mainproyectos{
+    margin-top: 150px;
+}
+
+.titulo-l{
+    margin-bottom: 40px;
+}
+
+.card{
+    margin-bottom: 50px;
+}
+
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -181,23 +204,29 @@ main {
     .primer-titulo {
         margin-top: -200px;
         margin-bottom: 60px;
-        font-size: 30px;
-        align-self: center;
+        font-size: 50px;
+        align-self: justify;
         text-align: center;
-        margin-right: 100px;
+        margin-right: 190px;
         justify-content: center;
     }
     
     .parrafo-principal {
         font-size: 20px; 
         text-align: center; 
-        max-width: 90%; 
+        max-width: 90%;
+        margin-bottom: -70px;
+    }
+
+    .fotoinicio{
+        margin-bottom: -120px;
     }
 
     .construcciones-2 {
         display: flex;
         flex-direction: column;
         align-items: center; 
+        margin-bottom: -10px;
     }
 
     .txt-parrafo{
@@ -207,7 +236,7 @@ main {
         width: 100%; 
         white-space: wrap; 
         overflow-x: auto; 
-        margin-bottom: 80px;
+        margin-bottom: 70px;
         margin-top: 10px;
     
     }
@@ -233,7 +262,7 @@ main {
         white-space: wrap; 
         overflow-x: auto; 
         margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .foto3{
@@ -249,8 +278,6 @@ main {
 
     }
 
-    
-
     p{
         max-width: 40%; 
         margin: 0 auto;
@@ -261,6 +288,32 @@ main {
     }
     #hola{
         width: 100%;
+        position: fixed;
     }
+
+    .footer-container2{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        justify-content: space-between;
+    }
+    .card{
+        width: 100vw;
+    }
+
+
+    .card-text{
+        font-size: 20px;
+        text-align: center;
+        max-width: none; 
+        width: 100%;
+        overflow-x: auto; 
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .mainproyectos{
+        margin-top: 50px;
+    }
+   
 
 }
