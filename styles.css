@@ -165,7 +165,8 @@ main {
 .mainproyectos{ 
     display: flex;
     flex-direction: column; 
- 
+    justify-content: center; 
+    align-items: center; 
     margin-top: 150px;
     flex-wrap: wrap;
 }
