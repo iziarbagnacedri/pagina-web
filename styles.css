@@ -155,10 +155,14 @@ main {
     display: flex;
     align-items: center;
     font-size: 15px;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: -80px;
 }
-.mainproyectos{
+.mainproyectos{ 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     margin-top: 150px;
 }
 
@@ -313,6 +317,7 @@ main {
     }
     .mainproyectos{
         margin-top: 50px;
+
     }
    
 
