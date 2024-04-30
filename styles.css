@@ -178,6 +178,7 @@ main {
 .card{
     justify-content: center;
     margin-bottom: 50px;
+    margin-top: 80px; 
 }
 
 

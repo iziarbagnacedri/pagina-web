@@ -1,0 +1,44 @@
+.header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 95px;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 100px;
+    margin: 0%;
+}
+
+
+main {
+    margin-top: 250px; 
+}
+
+.footer-container{
+    display:flex;
+    width: 100vw;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px; 
+    padding: 0 0px;
+    font-size: 15px;
+}
+
+.footer-container2{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    justify-content: space-around;
+    margin-top: -80px;
+    flex-direction: row;
+    max-width: 1200px; 
+    padding: 0 0px;
+   
+}
