@@ -16,9 +16,17 @@
 }
 
 
+
 main {
-    margin-top: 250px; 
+    margin-top: 150px; 
 }
+
+.p{
+    margin-left: 10px;
+}
+
+
+
 
 .footer-container{
     display:flex;

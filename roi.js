@@ -10,3 +10,5 @@ function calcularROI() {
     document.getElementById("resultadoROI").style.display = "block";
     document.getElementById("roiResultado").innerText = "El ROI de la propiedad es: " + ROI.toFixed(2) + "%";
 }
+
+

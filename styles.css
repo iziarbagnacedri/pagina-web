@@ -139,6 +139,11 @@ main {
     margin-top: 120px; 
 }
 
+.footerp{
+    border-top: 1px solid #ccc; 
+    padding-top: 0px;
+
+}
 
 .footer-container{
     display:flex;
@@ -176,6 +181,7 @@ main {
 }
 
 .card{
+    display: flex;
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 80px; 
@@ -309,7 +315,8 @@ main {
         justify-content: space-between;
     }
     .card{
-        width: 100vw;
+        width: 100%;
+
     }
 
 
