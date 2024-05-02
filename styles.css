@@ -3,14 +3,22 @@
     list-style: none;
 }
 
-.header {
-    position: fixed;
+.headermain {
     display: flex;
+    position: sticky;
     top: 0;
-    width: 100%;
-    background-color: white;
-    height: 95px;
+    z-index: 1000; 
+    background-color: #ffffff; 
 }
+
+.headerproyectos {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #ffffff; 
+}
+
 
 .container{
     height: 90px;
@@ -176,15 +184,27 @@ footer p {
 
 .mainproyectos{ 
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
     margin-top: 150px;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.leloir-plaza,
+.renata-norte,
+.epique,
+.DistritoT {
+  width: calc(50% - 20px); 
+  margin-bottom: 10px; 
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .titulo-l{
-    margin-bottom: 40px;
+    margin-bottom: -30px;
+}
+
+.titulo-leloir{
+    margin-bottom: -30px;
 }
 
 #card{
@@ -196,17 +216,43 @@ footer p {
 }
 
 #hola{
-        width: 100%;
-        position: fixed;
-    }
+    width: 100%;
+    position: fixed;
+}
 
+.boton-instagram {
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    background-image: url('https://e7.pngegg.com/pngimages/554/20/png-clipart-logo-computer-icons-instagram-logo-white-text.png'); 
+    background-size: cover; 
+    background-position: center; 
+    text-indent: -9999px; 
+}
+    
+.boton-instagram:hover {
+    opacity: 0.8; 
+ }
+    
+    
 
 
 
 
 @media only screen and (max-width: 600px) {
 
-    .header {
+    .headermain {
+        display: flex;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000; 
+        height: 85px;
+    }
+    
+    
+    .headerproyectos {
         display: flex;
         position: sticky;
         top: 0;
@@ -321,17 +367,23 @@ footer p {
         position: fixed;
     }
 
-    .footer-container2{
-        display: flex;
-        align-items: center;
-        font-size: 15px;
-        justify-content: space-between;
+    footer {
+        padding: 10px;
     }
+    
+    .footer-container {
+        flex-direction: column; 
+    }
+    
+    .footer-container > div {
+        margin: 10px 0; 
+    }
+
     #card{
         width: 100%;
+        margin-top: 0px;
 
     }
-
     .card-text{
         font-size: 20px;
         text-align: center;
@@ -343,8 +395,27 @@ footer p {
     }
     .mainproyectos{
         margin-top: 50px;
+        justify-content: center;
 
     }
+
+    .tituloleloir{
+        margin-top: 80px;
+    }
+
+    .titulo-l{
+        margin-bottom: 10px;
+    }
+
+    .leloir-plaza,
+    .renata-norte,
+    .epique,
+    .DistritoT {
+        width: 80vw; 
+        margin-bottom: 10px; 
+        margin-left: 10px;
+        margin-right: 10px;
+}
    
 
 }

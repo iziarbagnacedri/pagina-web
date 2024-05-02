@@ -92,16 +92,19 @@ footer p {
 }
 
 .boton-instagram {
-    background-color: #405DE6;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    background-image: url('https://e7.pngegg.com/pngimages/554/20/png-clipart-logo-computer-icons-instagram-logo-white-text.png'); 
+    background-size: cover; 
+    background-position: center; 
+    text-indent: -9999px; 
 }
 
 .boton-instagram:hover {
-    background-color: grey;
+    opacity: 0.8; 
 }
+
 
 
 #roiForm label {
@@ -125,5 +128,37 @@ footer p {
     padding: 5px; 
 }
 
+.resutado {
+    background-color: black;
+    color: white; 
+    font-weight: bold; 
+}
 
+
+@media only screen and (max-width: 600px) {
+
+    .header{
+        display: flex;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000; 
+        height: 85px;
+    }
+    
+
+    footer {
+        padding: 10px;
+    }
+    
+    .footer-container {
+        flex-direction: column; 
+    }
+    
+    .footer-container > div {
+        margin: 10px 0; 
+    }
+
+}
 
