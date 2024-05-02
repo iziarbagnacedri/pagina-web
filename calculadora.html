@@ -24,7 +24,7 @@
                     <a class="nav-link" href="Proyectos.html">Proyectos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="calculadora.html">Calculadora</a>
+                    <a class="nav-link" href="calculadora.html">Calculadora ROI</a>
                   </li>
                 </ul>
               </div>
@@ -33,12 +33,11 @@
 
     </header>
     <main>
-        <h1>¿Qué es el ROI y por qué es importante para vos?</h1>
-        <p>En el mundo de los bienes raíces, cada inversión cuenta. El ROI, o Retorno de la Inversión, es una herramienta esencial que te ayuda a comprender la rentabilidad de tus decisiones financieras. ¿Cómo funciona? Es sencillo. El ROI mide cuánto ganas (o pierdes) en relación con la cantidad de dinero que inviertes inicialmente. Por ejemplo, imagina que decides renovar una propiedad para venderla. Si inviertes $10,000 en renovaciones y, posteriormente, vendes la propiedad por $50,000 más de lo que pagaste, tu ROI sería del 400%. Esto significa que obtuviste cuatro veces el valor de tu inversión inicial.
-          Entender el ROI es fundamental para tomar decisiones informadas en el mercado inmobiliario. Te ayuda a evaluar el potencial de cada inversión, desde la compra de propiedades hasta proyectos de desarrollo. Al calcular el ROI, puedes determinar qué inversiones son más lucrativas y cuáles podrían no ser tan rentables. En última instancia, el ROI te permite maximizar tus ganancias y minimizar tus riesgos en el emocionante mundo de los bienes raíces. Así que la próxima vez que te enfrentes a una decisión financiera, recuerda preguntarte: ¿Cuál será mi ROI?</p>
-        
-        <h2>Calculadora ROI de Propiedad Inmobiliaria</h2>
-        <form id="roiForm">
+        <h1 class="titulo">¿Qué es el ROI y por qué es importante para vos?</h1>
+        <p class="parrafo">En el mundo de los bienes raíces, el ROI, o Retorno de la Inversión, es clave. Mide cuánto ganas o pierdes en relación con tu inversión inicial. Por ejemplo, si inviertes $10,000 y vendes por $50,000 más, tu ROI es del 400%. Esto guía tus decisiones, maximizando ganancias y minimizando riesgos. ¡El ROI es tu aliado para decisiones financieras inteligentes en bienes raíces!</p>
+        <h2 class="titulo2">Calculadora ROI de Propiedad Inmobiliaria</h2>
+        <div id="contenedor">
+          <form id="roiForm">
             <label for="costoInicial">Costo Inicial de la Propiedad:</label>
             <input type="number" id="costoInicial" name="costoInicial" required>
 
@@ -48,44 +47,35 @@
             <label for="gastosAnuales">Gastos Anuales Asociados:</label>
             <input type="number" id="gastosAnuales" name="gastosAnuales" required>
 
-            <button type="button" onclick="calcularROI()">Calcular ROI</button>
-        </form>
-
-        <div id="resultadoROI" style="margin-top: 20px; display: none;">
-            <h3>ROI Calculado:</h3>
-            <p id="roiResultado"></p>
+            <button class="resutado" type="button" onclick="calcularROI()">Calcular ROI</button>
+          </form>
         </div>
 
-        <footer class="footer">
-            <div class="footer-container">
-                <div class= "ubi">
-                    <h3>Ubicación</h3>
-                </div>
-                <div class="Horario">
-                    <h3>Horarios</h3>
-                  </div>
-                <div class="Instragram">
-                    <h3>Social</h3>
-                  </div>
+        <div id="resultadoROI" style="margin-top: 20px; display: none;">
+            <h3 class="roicalculado">ROI Calculado:</h3>
+            <p id="roiResultado"></p>
+        </div>
       
-            </div>
-            <div class="footer-container2">
-                <div class="direc">
-                  <p>Martin fierro 3290, Parque Leloir</p>
-                </div>
-                <div class="hor">
-                  <p>Lunes a viernes de 10:00 a 18:00</p>
-                </div>
-
-                <div class="Social">
-                  <a id=lingig href="https://www.instagram.com/ground.desarrollos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary" role="button">Instagram</a>
-                </div>
-
-              </div>
-
-
-        </footer>
     </main>
+
+    <footer>
+      <div class="footer-container">
+          <div class="ubicacion">
+              <h3>Ubicación</h3>
+              <p>Martin Fierro 3290</p>
+          </div>
+          <div class="horarios">
+              <h3>Horarios</h3>
+              <p>Lunes a Viernes de 10:00 a 18:00</p>
+          </div>
+          <div class="social">
+              <h3>Social</h3>
+              <a href="https://www.instagram.com/ground.desarrollos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary" role="button">Instagram</a>
+            </div>
+          </div>
+      </div>
+    </footer>
+  
 
     <script src="roi.js"></script>
     <script src="script.js"></script>
