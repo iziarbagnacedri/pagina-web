@@ -4,21 +4,19 @@
 }
 
 .headermain {
-    position: sticky;
     display: flex;
+    position: sticky;
     top: 0;
-    width: 100%;
-    background-color: white;
-    height: 95px;
+    z-index: 1000; 
+    background-color: #ffffff; 
 }
 
 .headerproyectos {
-    position: sticky;
     display: flex;
+    position: sticky;
     top: 0;
-    width: 100%;
-    background-color: white;
-    height: 95px;
+    z-index: 1000; 
+    background-color: #ffffff; 
 }
 
 
@@ -205,6 +203,7 @@ footer p {
 .titulo-l{
     margin-bottom: -30px;
 }
+
 
 
 #card{
