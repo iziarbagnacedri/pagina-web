@@ -4,19 +4,21 @@
 }
 
 .headermain {
+    position: fixed;
     display: flex;
-    position: sticky;
     top: 0;
-    z-index: 1000; 
-    background-color: #ffffff; 
+    width: 100%;
+    background-color: white;
+    height: 95px;
 }
 
 .headerproyectos {
+    position: fixed;
     display: flex;
-    position: sticky;
     top: 0;
-    z-index: 1000; 
-    background-color: #ffffff; 
+    width: 100%;
+    background-color: white;
+    height: 95px;
 }
 
 
