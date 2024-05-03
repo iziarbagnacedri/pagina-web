@@ -3,6 +3,11 @@
     list-style: none;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 .headermain {
     display: flex;
     position: sticky;
