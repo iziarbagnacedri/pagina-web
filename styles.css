@@ -4,7 +4,7 @@
 }
 
 .headermain {
-    position: fixed;
+    position: sticky;
     display: flex;
     top: 0;
     width: 100%;
@@ -13,7 +13,7 @@
 }
 
 .headerproyectos {
-    position: fixed;
+    position: sticky;
     display: flex;
     top: 0;
     width: 100%;
