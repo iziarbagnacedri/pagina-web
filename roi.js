@@ -1,23 +1,35 @@
 
 function calcularROI() {
-    const costoInicial = parseFloat(document.getElementById("costoInicial").value);
-    const ingresosAnuales = parseFloat(document.getElementById("ingresosAnuales").value);
-    const gastosAnuales = parseFloat(document.getElementById("gastosAnuales").value);
+    var costoInicial = document.getElementById("costoInicial").value;
+    var ingresosAnuales = document.getElementById("ingresosAnuales").value;
+    var gastosAnuales = document.getElementById("gastosAnuales").value;
 
-    const beneficioNetoAnual = ingresosAnuales - gastosAnuales;
-    const ROI = (beneficioNetoAnual / costoInicial) * 100;
+    if (costoInicial === "" || ingresosAnuales === "" || gastosAnuales === "") {
+        alert("Por favor complete todos los campos con números.");
+        return;
+    }
+
+    if (costoInicial.length < 5 || costoInicial.length > 13) {
+        alert("Por favor ingrese números entre 5 y 13 cifras en el costo inicial.");
+        return;
+    }
+
+    costoInicial = parseInt(costoInicial);
+    ingresosAnuales = parseInt(ingresosAnuales);
+    gastosAnuales = parseInt(gastosAnuales);
+
+    if (ingresosAnuales < gastosAnuales) {
+        alert("Los ingresos anuales no pueden ser menores que los gastos anuales.");
+        return;
+    }
+
+    if (ingresosAnuales > costoInicial) {
+        alert("El costo inicial no puede ser menor a los ingresos anuales");
+        return;
+    }
+
+    var roi = ((ingresosAnuales - gastosAnuales) / costoInicial) * 100;
 
     document.getElementById("resultadoROI").style.display = "block";
-    document.getElementById("roiResultado").innerText = "El ROI de la propiedad es: " + ROI.toFixed(2) + "%";
+    document.getElementById("roiResultado").textContent = "El ROI calculado es: " + roi.toFixed(2) + "%";
 }
-
-
-document.getElementById("formularioContacto").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita que se envíe el formulario por defecto
-    
-    // Aquí podrías realizar alguna validación del formulario si lo deseas
-    
-    // Simulación de envío del formulario (aquí enviarías los datos al servidor)
-    // Después de enviar exitosamente, muestra el mensaje de éxito
-    document.getElementById("mensajeEnvio").style.display = "block";
-});

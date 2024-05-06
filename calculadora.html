@@ -36,25 +36,27 @@
         <h1 class="titulo">¿Qué es el ROI y por qué es importante para vos?</h1>
         <p class="parrafo">En el mundo de los bienes raíces, el ROI, o Retorno de la Inversión, es clave. Medí cuánto ganás o perdés en relación con tu inversión inicial. Por ejemplo, si invertís $10,000 y vendés por $50,000 más, tu ROI es del 400%. Esto guía tus decisiones, maximizando ganancias y minimizando riesgos. ¡El ROI es tu aliado para decisiones financieras inteligentes en bienes raíces!</p>
         <h2 class="titulo2">Calculadora ROI de Propiedad Inmobiliaria</h2>
-        <div id="contenedor">
+        <div class= "contenedor">
           <form id="roiForm">
-            <label for="costoInicial">Costo Inicial de la Propiedad:</label>
-            <input type="number" id="costoInicial" name="costoInicial" required>
-
-            <label for="ingresosAnuales">Ingresos Anuales Generados:</label>
-            <input type="number" id="ingresosAnuales" name="ingresosAnuales" required>
-
-            <label for="gastosAnuales">Gastos Anuales Asociados:</label>
-            <input type="number" id="gastosAnuales" name="gastosAnuales" required>
-
-            <button class="resutado" type="button" onclick="calcularROI()">Calcular ROI</button>
+              <label for="costoInicial">Costo Inicial de la Propiedad (entre 5 y 13 cifras):</label>
+              <input type="number" id="costoInicial" name="costoInicial" pattern="[0-9]{5,13}" title="Ingrese un número entre 5 y 13 cifras." required>
+      
+              <label for="ingresosAnuales">Ingresos Anuales Generados:</label>
+              <input type="number" id="ingresosAnuales" name="ingresosAnuales" required>
+              
+      
+              <label for="gastosAnuales">Gastos Anuales Asociados:</label>
+              <input type="number" id="gastosAnuales" name="gastosAnuales" required>
+      
+              <button class="resultado" type="button" onclick="calcularROI()">Calcular ROI</button>
           </form>
-        </div>
-
-        <div id="resultadoROI" style="margin-top: 20px; display: none;; margin-left: 10px;">
-            <h3 class="roicalculado">ROI Calculado:</h3>
-            <p id="roiResultado" style="margin-left: 20px;"></p>
-        </div>
+      </div>
+      
+      <div id="resultadoROI" style="margin-top: 5px; display: none; margin-left: 10px;">
+          <h3 class="roicalculado">ROI Calculado:</h3>
+          <p id="roiResultado" style="margin-left: 20px;"></p>
+      </div>
+      
       
     </main>
 
