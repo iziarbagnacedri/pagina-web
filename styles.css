@@ -196,7 +196,6 @@ footer p {
 }
 
 
-
 .leloir-plaza,
 .renata-norte,
 .epique,
@@ -204,11 +203,9 @@ footer p {
     margin-bottom: 20px; 
 }
 
-
 .titulo-l{
     margin-bottom: -30px;
 }
-
 
 
 #card{
@@ -239,7 +236,44 @@ footer p {
 .boton-instagram:hover {
     opacity: 0.8; 
  }
-    
+
+
+ #favoritos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#favoritos > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 60vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#favoritos > div button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+#favoritos > div button:hover {
+    background-color: #333;
+}
     
 
 
