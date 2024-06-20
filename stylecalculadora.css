@@ -20,6 +20,22 @@
     position: fixed;
 }
 
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.proyectos{
+    color:black;
+}
+
+.nosotros{
+    color:black
+}
+.contactanos{
+    color:black
+}
+
 
 main{
     margin-top: 150px;
@@ -106,7 +122,6 @@ footer p {
 }
 
 
-
 #roiForm label {
     display: block;
     margin-bottom: 5px;
@@ -122,16 +137,25 @@ footer p {
     margin-top: 10px; 
 }
 
-#roiForm input,
-#roiForm button {
-    border-radius: 20px; 
-    padding: 5px; 
+#roiForm input{
+    border-radius: 50px; 
+    padding: 10px 20px; 
+}
+
+#roiForm button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 50px; 
+    padding: 10px 20px;
 }
 
 .resutado {
     background-color: black;
-    color: white; 
-    font-weight: bold; 
+    color: white;
+    border: none;
+    font-weight: bold;
 }
 
 
