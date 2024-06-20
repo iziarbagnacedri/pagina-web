@@ -1,4 +1,3 @@
-
 .header {
     position: fixed;
     display: flex;
@@ -28,6 +27,7 @@
 }
 
 .main-container {
+    margin-top: 200px;
     text-align: center;
     margin: 40px auto;
     max-width: 1200px;
@@ -131,4 +131,18 @@ footer h3 {
 
 footer p {
     margin-bottom: 15px;
+}
+
+.boton-instagram {
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    background-image: url('https://e7.pngegg.com/pngimages/554/20/png-clipart-logo-computer-icons-instagram-logo-white-text.png'); 
+    background-size: cover; 
+    background-position: center; 
+    text-indent: -9999px; 
+}
+
+.boton-instagram:hover {
+    opacity: 0.8; 
 }
