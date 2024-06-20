@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Desarrollos Inmobiliarios</title>
+    <link rel="stylesheet" href="decoraciónstyle.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary" id="hola">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="logo" src="./imagenes/groundlogo.jpg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="calculadora.html">Calculadora ROI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicio de decoración.html">Asesoría en diseño de interiores</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="cart-icon" class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <main class="main-container">
+        <h1>Servicios de Decoración</h1>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Decoración Simple">
+                <h2>Decoración Simple</h2>
+                <p>Una opción básica y elegante para transformar tus espacios.</p>
+                <button class="add-to-cart" data-service="Decoración Simple" data-price="100">Añadir al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Decoración Avanzada">
+                <h2>Decoración Avanzada</h2>
+                <p>Una opción avanzada para aquellos que buscan un toque extra.</p>
+                <button class="add-to-cart" data-service="Decoración Avanzada" data-price="200">Añadir al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Decoración Premium">
+                <h2>Decoración Premium</h2>
+                <p>Una opción premium para una experiencia de lujo.</p>
+                <button class="add-to-cart" data-service="Decoración Premium" data-price="300">Añadir al Carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="cart-section" class="cart-section">
+        <h2>Carrito de Compras</h2>
+        <div id="cart-items" class="cart-items"></div>
+        <div id="cart-total" class="cart-total">Total: $0</div>
+        <button id="checkout" class="checkout">Finalizar Compra</button>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="ubicacion">
+                <h3>Ubicación</h3>
+                <p>Martin Fierro 3290</p>
+            </div>
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <p>Lunes a Viernes de 10:00 a 18:00</p>
+            </div>
+            <div class="social">
+              <h3>Social</h3>
+              <a href="https://www.instagram.com/ground.desarrollos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="boton-instagram"></a>
+          </div>
+          
+            </div>
+        </div>
+      </footer>
+
+
+    <script src="roi.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>      
+</body>
+</html>
