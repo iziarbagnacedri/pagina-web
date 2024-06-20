@@ -163,3 +163,31 @@ footer p {
 .boton-instagram:hover {
     opacity: 0.8; 
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .header{
+        display: flex;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000; 
+        height: 85px;
+    }
+    
+
+    footer {
+        padding: 10px;
+    }
+    
+    .footer-container {
+        flex-direction: column; 
+    }
+    
+    .footer-container > div {
+        margin: 10px 0; 
+    }
+
+}
