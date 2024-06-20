@@ -24,15 +24,16 @@
 .cart-icon {
     font-size: 24px;
     cursor: pointer;
+    justify-content: right;
 }
 
 .main-container {
-    margin-top: 200px;
-    text-align: center;
-    margin: 40px auto;
-    max-width: 1200px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
-
 .cards-container {
     display: flex;
     justify-content: space-around;
