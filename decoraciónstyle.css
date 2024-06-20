@@ -5,6 +5,7 @@
     width: 100%;
     background-color: white;
     height: 95px;
+    z-index: 1000;
 }
 
 .logo {
@@ -111,8 +112,7 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
-
-.checkout {
+#checkout {
     background-color: black;
     color: white;
     border: none;
