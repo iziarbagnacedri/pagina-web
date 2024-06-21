@@ -80,8 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateCart() {
         cartItems.innerHTML = '';
         let total = 0;
+        let itemCount = 0;
         cart.forEach(item => {
             total += item.price * item.quantity;
+            itemCount += item.quantity;
             const cartItem = document.createElement('div');
             cartItem.classList.add('cart-item');
             cartItem.innerHTML = `
@@ -92,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         cartTotal.innerText = `Total: $${total.toFixed(2)}`;
-        cartCount.innerText = cart.length;
+        cartCount.innerText = itemCount;
 
         document.querySelectorAll('.remove-item').forEach(button => {
             button.addEventListener('click', () => {
@@ -103,7 +105,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function removeFromCart(service) {
-        cart = cart.filter(item => item.service !== service);
+        const item = cart.find(item => item.service === service);
+        if (item && item.quantity > 1) {
+            item.quantity--;
+        } else {
+            cart = cart.filter(item => item.service !== service);
+        }
         updateCart();
     }
 });
